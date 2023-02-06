@@ -1,0 +1,20 @@
+.special-btn {
+    padding: 15px 20px;
+    position: absolute;
+    font-family: var(--font-poppins);
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    z-index: 1000;
+    transition: 300ms ease-in-out;
+}
+
+.special-btn:hover, .special-btn:active {
+    background-color: white;
+    color: black;
+}

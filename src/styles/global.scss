@@ -1,0 +1,148 @@
+/*====================
+Typography
+====================*/
+
+/* Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Raleway */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Monsterrat */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Dancing Script */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+
+/*====================
+Typography Ends
+====================*/
+
+:root {
+  --font-roboto: "Roboto", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-raleway: "Raleway", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-dancingScript: "Dancing Script", sans-serif;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-poppins);
+}
+
+a,
+a:visited,
+a:focus,
+a:hover {
+  all: unset;
+}
+
+.layout {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+
+  z-index: 10;
+}
+
+/* ====================
+Homepages
+==================== */
+
+.bebeHome {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  z-index: 10;
+}
+
+.triangle {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(to bottom right, transparent 50%, white 50%);
+
+  z-index: 10;
+}
+
+.home-header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  h1 {
+    padding: 10% 25%;
+    margin: 0;
+    color: white;
+    text-align: center;
+
+    font-size: 40px;
+    font-family: var(--font-raleway);
+    font-weight: 200;
+
+    z-index: 100;
+
+    span {
+      font-family: var(--font-dancingScript);
+      font-size: 1.725rem;
+    }
+
+    .wish {
+      font-size: 1.25rem;
+      white-space: nowrap;
+      font-family: var(--font-raleway);
+    }
+  }
+}
+
+.bebeHome {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ====================
+Homepages Ends
+==================== */
+
+/* ====================
+Questionpages
+==================== */
+
+/* ====================
+Questionpages Ends
+==================== */
+
+/* ====================
+Resultpages
+==================== */
+
+/* ====================
+Resultpages Ends
+==================== */
