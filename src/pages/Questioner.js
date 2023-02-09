@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link , useNavigate} from "react-router-dom";
+import Swal from "sweetalert2";
 import number1 from '../assets/questionImg/number1.jpeg'
 import number2 from '../assets/questionImg/number2.jpeg'
 import number3 from '../assets/questionImg/number3.jpg'
@@ -162,6 +163,10 @@ function Questioner() {
     if (questioner < 9) {
       setQuestioner((prev) => (prev += 1));
       console.log(questioner);
+      if(questioner === 4) {
+        Swal.fire(`It's actually 12 January :p`)
+  
+      }
     } else {
       localStorage.setItem('result', result)
       navigate('/result')
