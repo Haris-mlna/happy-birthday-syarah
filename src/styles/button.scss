@@ -5,6 +5,7 @@
     color: white;
     background-color: transparent;
     border: 1px solid white;
+    cursor: pointer;
 
     top: 50%;
     left: 50%;
@@ -17,4 +18,48 @@
 .special-btn:hover, .special-btn:active {
     background-color: white;
     color: black;
+}
+
+.audio-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    font-size: 20px;
+    bottom: 5%;
+    right: 5%;
+    position: fixed;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.icons-audio {
+    color: pink;
+    margin-top: 4px;
+}
+
+.answer-btn {
+    width: 90%;
+    height: 40px;
+    border: none;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 4px;
+    margin: 1rem 0;
+    color: pink;
+    font-family: var(--font-poppins);
+    cursor: pointer;
+    transition: 100ms ease-in-out;
+}
+
+.next-btn {
+    width: 100px;
+    padding: .5rem;
+    color: pink;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    font-family: var(--font-poppins);
 }
